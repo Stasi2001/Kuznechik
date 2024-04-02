@@ -11,12 +11,10 @@ public class Main {
         Frog testFrog2 = new Frog(0, 0, 100);
         int n = 3;
         Point[] route = new Point[n];
-        route[0] = new Point(2, 0);
-        route[1] = new Point(1, 1);
-        route[2] = new Point(0, 1);
 
 
-
+        int n = getRouteLengthFromUser();
+        Point[] route = getRouteFromUser(n);
 
         for (int i = 0; i < route.length; i++) {
             double d = Point.calcDistance(testFrog.place, route[i]);
@@ -38,15 +36,23 @@ public class Main {
         return newFrog;
     }
 
-/*    public static Point[] getRouteFromUser(int length) {
+    public static int getRouteLengthFromUser() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите длину маршрута:");
+        return sc.nextInt();
+    }
+
+    public static Point[] getRouteFromUser(int length) {
         Scanner sc = new Scanner(System.in);
         Point[] route = new Point[length];
-        System.out.println("Введите маршрут:");
+        System.out.println("Введите координаты:");
         for (int i = 0; i < length; i++) {
-
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            route[i] = new Point(x, y);
         }
         return route;
-    }*/
+    }
     //TODO:
     //1 сделать функцию, которая спрашивает у пользователя координаты и длину языка и выдает в
     //  качестве результата новую Лягушку
