@@ -38,17 +38,15 @@ public class Main {
         return newFrog;
     }
 
-    public static Point[] getRouteFromUser(int length) {
+/*    public static Point[] getRouteFromUser(int length) {
         Scanner sc = new Scanner(System.in);
         Point[] route = new Point[length];
         System.out.println("Введите маршрут:");
         for (int i = 0; i < length; i++) {
-            int x = sc.nextInt();
-            int y = sc.nextInt();
-            route[i] = new Point(x, y);
+
         }
         return route;
-    }
+    }*/
     //TODO:
     //1 сделать функцию, которая спрашивает у пользователя координаты и длину языка и выдает в
     //  качестве результата новую Лягушку
