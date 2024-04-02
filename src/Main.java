@@ -23,6 +23,7 @@ public class Main {
                 System.out.println("кузнечек съеден в "+(i+1) +" точке");
                 break;
             }
+
         }
 
 
